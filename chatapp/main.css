@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+/*
+==============================
+        START-SCREEN
+==============================
+*/
+
+.start-screen {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    max-width: 768px;
+    transition: 1s;
+    z-index: 10;
+}
+
+.start-screen:hover {
+    box-shadow: 5px 5px 5px rgba(90, 84, 84, 0.288);
+}
+
+.name-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 30%;
+    text-align: center;
+}
+
+.start-text {
+}
+
+#user-name {
+    position: absolute;
+    width: 30%;
+    height: 30px;
+    top: 10%;
+    left: 35%;
+}
+
+.start-button {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 10%;
+    height: 7%;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    /* font-size: 1.5em; */
+}
+
+/*
+==============================
+        MAIN-SCREEN
+==============================
+*/
+
+.main-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+    background-color: rgb(193, 208, 219);
+    padding: 20px;
+    z-index: 5;
+}
+
+.chat-message {
+    background-color: white;
+    width: 30%;
+    height: 5%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.send-area {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    top: 90%;
+    background-color: white;
+}
+
+#input-message {
+    width: 80%;
+    height: 100%;
+    border: none;
+    overflow: scroll;
+    padding: 5px;
+    resize: none;
+}
+
+.send-button {
+    position: absolute;
+    width: 18%;
+    height: 80%;
+    left: 81%;
+    top: 10%;
+    border-radius: 5px;
+    background-color: yellow;
+}

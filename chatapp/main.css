@@ -39,9 +39,6 @@ body {
     text-align: center;
 }
 
-.start-text {
-}
-
 #user-name {
     position: absolute;
     width: 30%;
@@ -79,11 +76,34 @@ body {
 }
 
 .chat-message {
+    position: relative;
     background-color: white;
     width: 30%;
-    height: 5%;
+    height: auto;
+    word-break: break-all;
     padding: 5px;
     margin-bottom: 15px;
+}
+
+.my-chat-message {
+    position: relative;
+    left: 70%;
+    width: 30%;
+    height: auto;
+    background-color: yellow;
+    word-break: break-all;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.name-space {
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message-space {
+    margin: 10px;
 }
 
 .send-area {

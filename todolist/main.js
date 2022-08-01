@@ -37,7 +37,7 @@ window.onload = (() => {
     document.querySelector(".todo-button").onclick = () => {addTodo(todoList)}
 
     document.addEventListener("keydown", (e) => {
-        if(e.key == "Enter") {
+        if(e.key == "Enter" && !e.isComposing) {
             addTodo(todoList)
         }
     })

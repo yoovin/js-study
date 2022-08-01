@@ -1,6 +1,6 @@
 const addTodo = (todoList) => {
     if (!document.querySelector(".todo-input").value == ""){
-        todoList.appendChild(createTodo(document.querySelector(".todo-input").value))
+        todoList.appendChild(createTodo(document.querySelector(".todo-input").value)) // todolist에 바로 값을 넣어버림
         document.querySelector(".todo-input").value = ""
     }
 }
@@ -34,10 +34,10 @@ const deleteTodo = (elem) => {
 
 window.onload = (() => {
     let todoList = document.querySelector(".todo-list")
-    document.querySelector(".todo-button").onclick = () => {addTodo(todoList)}
+    document.querySelector(".todo-button").onclick = () => {addTodo(todoList)} // onclick -> 누르면 실행되는 함수로 addTodo를 넣어줌
 
     document.addEventListener("keydown", (e) => {
-        if(e.key == "Enter" && !e.isComposing) {
+        if(e.key == "Enter" && !e.isComposing) { // 한글입력시 두번 실행되는것을 방지함
             addTodo(todoList)
         }
     })

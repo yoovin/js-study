@@ -96,5 +96,6 @@ body {
 }
 
 .checked {
+    /* 체크 시 취소선 추가를 위함 */
     text-decoration: line-through;
 }

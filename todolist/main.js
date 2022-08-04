@@ -11,8 +11,8 @@ const createTodo = (todo) => {
     let checkIcon = document.createElement("i")
     let deleteIcon = document.createElement("i")
 
-    checkIcon.classList.add("todo-check", "fas", "fa-check")
-    deleteIcon.classList.add("todo-delete", "fas", "fa-trash")
+    checkIcon.classList.add("todo-check", "fa-solid", "fa-check")
+    deleteIcon.classList.add("todo-delete", "fa-solid", "fa-trash")
     newTodo.classList.add("todo-card")
 
     checkIcon.onclick = () => checkTodo(checkIcon)

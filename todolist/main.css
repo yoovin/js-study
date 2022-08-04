@@ -77,11 +77,6 @@ body {
 .todo-card:hover {
     box-shadow: 5px 5px 5px rgba(90, 84, 84, 0.288);
 }
-
-.checked {
-    text-decoration: line-through;
-}
-
 .todo-check {
     position: absolute;
     left: 80%;
@@ -98,4 +93,8 @@ body {
 
 .todo-delete:hover {
     color: red;
+}
+
+.checked {
+    text-decoration: line-through;
 }

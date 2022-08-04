@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+@media screen and (min-width: 768px){
+    .main-screen {
+        left: 33%;
+    }
+}
+
+.main-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+    max-width: 768px;
+    max-height: 1000px;
+}
+
+.calc-area{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+.input-area{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+}
+
+.number-area{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.num-items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 25%;
+}
+
+.operator-area {
+    position: absolute;
+    left: 75%;
+    width: 25%;
+    height: 100%;
+    /* background-color: greenyellow; */
+}
+
+.operator-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.operator {
+    width: 100%;
+    height: 20%;
+    /* margin: 0 auto; */
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.number{
+    width: 30%;
+    height: 80%;
+    /* margin: 0 auto; */
+    /* border: 5px solid black; */
+    border-radius: 50%;
+    background-color: rgb(236, 236, 236);
+    transition: 1s;
+}
+
+.number:hover {
+    box-shadow: 5px 5px 5px rgba(90, 84, 84, 0.288);
+}
